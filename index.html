@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="size">
+        <header>
+            <img src="imagenes/Vector.png" alt="icon">
+            
+        </header> 
+
+            <section class="inputEncriptar2">
+                <textarea class="textcifrado" id="inputText2" readonly="readonly"></textarea> 
+                <button id="copiar" onclick="copiar()">Copiar</button>
+                    <div class="previsualizacion"> 
+                         <img id="imagen" src="/imagenes/buscando.png">
+                         <p id="text">Ningun mensaje fue encontrado.</p>
+                         <p id="text-2">Inserte el texto que desea encriptar o desencriptar.</p>
+                    </div>
+            </section>
+
+        <section class="inputEncriptar">
+            <textarea id="inputText1"cols="30" rows="10" placeholder="Ingrese el texto aqui..." ></textarea>
+        </section>
+
+        <div class="botones"> 
+            <div>
+                <h4><img src="./imagenes/Advertencia.png"> Solo letras minusculas y sin acentos.</h4>
+             </div>
+            <button id="botonEncriptar" onclick="encriptar(), ocultarContenido(), validarTexto()">Encriptar</button>
+            <button id="botonDesencriprar"onclick="desencriptar(), ocultarContenido(), validarTexto()">Desencriptar</button>
+                
+        </div>
+        <footer>
+            <h3>&#9400 Elaborado por Cristian Bolaño M.</h3>             
+            
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
